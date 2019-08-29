@@ -7,7 +7,7 @@ import interpreter.VirtualMachine;
 import java.util.ArrayList;
 
 /**
- * WRITE byte code: output the value at top of RunTimeStack
+ * WRITE byte code: output the value at top of RunTimeStack to standard output, and return that value.
  */
 public class WriteCode extends ByteCode {
     
