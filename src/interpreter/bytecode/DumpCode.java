@@ -7,27 +7,29 @@ import interpreter.VirtualMachine;
 import java.util.ArrayList;
 
 /**
- * DUMP byte code: instructs interpreter to turn dumping on or off
+ * DUMP byte code: instructs interpreter to turn dumping on or off.
+ * If on, the actions performed by the virtual machine will be printed to standard output.
  */
-
 public class DumpCode extends ByteCode {
-    
+
     private int dumpState;
+
     public void init(ArrayList<String> args) {
         String state = args.get(0);
-        if (state.equals("ON") ) {
+        if (state.equals("ON")) {
             dumpState = 1;
         }
         if (state.equals("OFF")) {
             dumpState = 0;
         }
     }
-    
-    public void print(VirtualMachine vm) { }
-    
+
+    public void print(VirtualMachine vm) {
+    }
+
     public void execute(VirtualMachine vm) {
         vm.setDump(dumpState);
     }
-    
-    
+
+
 }
