@@ -9,8 +9,7 @@ import java.util.ArrayList;
  * The instances of the concrete classes will be responsible for processing
  * their arguments when ByteCodeLoader executes.
  * Each method below is implemented by the concrete classes.
- * Dynamic binding allows the type of each ByteCode to be determined at 
- * run time.
+ * The byte codes are an example of the concept of polymorphism.
  */
 
 public abstract class ByteCode {
